@@ -32,4 +32,6 @@ Possible Improvements :
 Note:
 - Initial scrolling can be slow in compose due to debug build [reference](https://developer.android.com/jetpack/compose/lists#measuring-performance)
 
+Feel free to write me in case of questions
+
 Happy reviewing ✅

@@ -156,12 +156,6 @@ private fun Project.applyCommonConfigurations(nameSpaceValue: String) {
             kotlinCompilerExtensionVersion = "1.3.2"
         }
 
-//        lintOptions {
-//            isAbortOnError = true
-//            isQuiet = true
-//            isWarningsAsErrors = true
-//        }
-
         testOptions {
             unitTests.isReturnDefaultValues = true
             unitTests.isIncludeAndroidResources = true

@@ -4,9 +4,9 @@
     <application>
         <activity
             android:name="com.rax.photos.overview.presentation.views.PhotosOverviewActivity"
-            android:theme="@style/Theme.RaxCookBook.NoActionBar"
             android:configChanges="layoutDirection|locale"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.RaxCookBook.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

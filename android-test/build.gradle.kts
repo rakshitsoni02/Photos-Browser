@@ -1,6 +1,5 @@
 import com.rax.buildsrc.applyCommonLibConfigurations
 import com.rax.buildsrc.utils.implementation
-import com.rax.buildsrc.utils.kapt
 
 plugins {
     id("com.android.library")
