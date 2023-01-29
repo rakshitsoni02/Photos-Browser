@@ -1,5 +1,6 @@
 import com.rax.buildsrc.applyCommonAppConfigurations
 import com.rax.buildsrc.presentationDependencies
+import com.rax.buildsrc.testDependencies
 
 plugins {
     id("com.android.application")
@@ -10,6 +11,7 @@ plugins {
 
 applyCommonAppConfigurations(nameSpaceValue = "com.rax")
 presentationDependencies()
+testDependencies()
 
 dependencies {
     implementation(project(":photos-overview:presentation"))

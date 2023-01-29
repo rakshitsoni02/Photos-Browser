@@ -16,5 +16,6 @@ applyCommonLibConfigurations(nameSpaceValue = "com.rax.shared.ui.components")
 
 dependencies {
     composeDependencies()
+    implementation(Android.materialDesign)
     implementation(Coil.coilCompose)
 }

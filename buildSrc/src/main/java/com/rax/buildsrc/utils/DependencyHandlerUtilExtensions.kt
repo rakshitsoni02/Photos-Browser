@@ -15,7 +15,7 @@ fun DependencyHandler.annotationProcessor(dependency: String) {
     add("annotationProcessor", dependency)
 }
 
-fun DependencyHandler.androidTestImplementation(dependency: String) {
+fun DependencyHandler.androidTestImplementation(dependency: Any) {
     add("androidTestImplementation", dependency)
 }
 
@@ -33,4 +33,12 @@ fun DependencyHandler.testRuntimeOnly(dependency: String) {
 
 fun DependencyHandler.debugImplementation(dependency: String) {
     add("debugImplementation", dependency)
+}
+
+fun DependencyHandler.kaptAndroidTest(dependency: Any) {
+    add("kaptAndroidTest", dependency)
+}
+
+fun DependencyHandler.testAnnotationProcessor(dependency: Any) {
+    add("testAnnotationProcessor", dependency)
 }

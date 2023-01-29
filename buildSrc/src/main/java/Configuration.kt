@@ -5,5 +5,5 @@ object Configuration {
     const val VERSION_NAME = "1.0.0"
     const val VERSION_CODE = 1
     const val APPLICATION_ID = "com.rax"
-    const val ANDROID_TEST_INSTRUMENTATION = "androidx.test.runner.AndroidJUnitRunner"
+    const val ANDROID_TEST_INSTRUMENTATION = "com.rax.android.test.runner.AppTestRunner"
 }

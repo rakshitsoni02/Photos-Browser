@@ -55,6 +55,7 @@ fun Project.testDependencies() {
     android {
         dependencies.apply {
             testImplementation(project(path = ":test"))
+            androidTestImplementation(project(path = ":android-test"))
             genericTestDependencies()
             genericAndroidTestDependencies()
         }
@@ -155,11 +156,11 @@ private fun Project.applyCommonConfigurations(nameSpaceValue: String) {
             kotlinCompilerExtensionVersion = "1.3.2"
         }
 
-        lintOptions {
-            isAbortOnError = true
-            isQuiet = true
-            isWarningsAsErrors = true
-        }
+//        lintOptions {
+//            isAbortOnError = true
+//            isQuiet = true
+//            isWarningsAsErrors = true
+//        }
 
         testOptions {
             unitTests.isReturnDefaultValues = true

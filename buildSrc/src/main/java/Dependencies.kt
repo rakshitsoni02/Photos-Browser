@@ -36,10 +36,6 @@ private object Versions {
     const val hiltViewModel = "1.0.0-alpha03"
     const val javapoet = "1.13.0"
 
-    const val lifeCycle = "2.2.0"
-    const val liveData = "2.3.1"
-    const val lifeCycleRuntime = "2.4.0-alpha01"
-
     const val jUnit = "4.13.2"
     const val mockk = "1.13.3"
     const val androidJUnit = "1.1.3"
@@ -83,19 +79,13 @@ object Testing {
     const val core = "androidx.arch.core:core-testing:${Versions.archTesting}"
 }
 
-object Lifecycle {
-    const val lifecycleExtensionRuntime =
-        "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifeCycleRuntime}"
-    const val lifecycleExtension = "androidx.lifecycle:lifecycle-extensions:${Versions.lifeCycle}"
-    const val lifecycleCommon = "androidx.lifecycle:lifecycle-common-java8:${Versions.lifeCycle}"
-    const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.liveData}"
-}
-
 object Hilt {
     const val daggerCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroid}"
     const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hiltViewModel}"
     const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltAndroid}"
     const val javapoet = "com.squareup:javapoet:${Versions.javapoet}"
+
+    const val hiltTesting = "com.google.dagger:hilt-android-testing:${Versions.hiltAndroid}"
 }
 
 object Retrofit {

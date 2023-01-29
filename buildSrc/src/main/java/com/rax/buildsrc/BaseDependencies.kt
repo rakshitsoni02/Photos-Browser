@@ -7,10 +7,7 @@ import Hilt
 import Retrofit
 import RxJava
 import Testing
-import com.rax.buildsrc.utils.androidTestImplementation
-import com.rax.buildsrc.utils.implementation
-import com.rax.buildsrc.utils.kapt
-import com.rax.buildsrc.utils.testImplementation
+import com.rax.buildsrc.utils.*
 import org.gradle.api.artifacts.dsl.DependencyHandler
 
 
@@ -94,4 +91,6 @@ fun DependencyHandler.genericTestDependencies() {
 fun DependencyHandler.genericAndroidTestDependencies() {
     androidTestImplementation(Testing.extJUnit)
     androidTestImplementation(Testing.espresso)
+    androidTestImplementation(Hilt.hiltTesting)
+    kaptAndroidTest(Hilt.daggerCompiler)
 }
