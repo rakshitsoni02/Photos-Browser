@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="Platform.Theme.RaxCookBook" parent="Theme.Material3.DayNight">
+        <item name="android:statusBarColor">@color/black30</item>
+    </style>
+
+    <style name="Theme.RaxCookBook" parent="Platform.Theme.RaxCookBook">
+        <item name="colorPrimary">@color/blue500</item>
+        <item name="colorPrimaryDark">@color/blue800</item>
+        <item name="colorAccent">@color/yellow700</item>
+    </style>
+
+    <style name="Theme.RaxCookBook.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RaxCookBook.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="Theme.RaxCookBook.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+</resources>
